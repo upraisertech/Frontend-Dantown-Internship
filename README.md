@@ -1,7 +1,7 @@
 # Frontend-Dantown-Internship
 Hey Guys,  
 
-Welcome to the Dantown Front-End Internship Program
+Welcome to the Dantown Front-End Internship Assessment,
 
 You are required to create a branch from the main branch and initialize a Next.js application
 
@@ -14,3 +14,5 @@ Subsequently make a Pull Request to the main branch
 You can use any Front-End Tooling of your choice be it styled-components or whatnot
 
 Host the Project and send the project link, alongside your CV to hire@godantown.com
+
+Goodluck Guys!
