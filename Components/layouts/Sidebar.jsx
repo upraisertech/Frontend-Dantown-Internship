@@ -1,19 +1,15 @@
 import { useState } from "react";
 import Link from "next/link";
-import { useRouter, useParams, } from 'next/router';
+import { useRouter } from 'next/router';
 import { links, links2 } from "Data/links";
 // import Logo from "./Logo";
 // import { Line } from "components";
 
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
-  const { id } = useParams();
+  // const { id } = useParams();
   const location = useRouter();
 
-  const handleLogout = () => {
-    localStorage.removeItem("token");
-    location("/");
-  };
 
   return (
     <div className={` sidebarw fixed
