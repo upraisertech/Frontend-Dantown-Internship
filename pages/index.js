@@ -1,9 +1,7 @@
 import React from "react";
 import Navbar from "Components/navbar_components/Navbar";
 import Sidebar from "Components/layouts/Sidebar";
-import { useDispatch } from "react-redux";
-import { closeDropdown, closeNotifications } from "../../features/uiSlice";
-import SettingsHeader from "components/settings/SettingsHeader";
+import Drawing from "Components/DrawingComponent";
 
 const Home = () => {
  
@@ -15,7 +13,7 @@ const Home = () => {
       <div className="secondside">
         <Navbar />
         <div className="">
-          <SettingsHeader defaultTab={1} />
+          <Drawing />
         </div>
       </div>
     </div>
