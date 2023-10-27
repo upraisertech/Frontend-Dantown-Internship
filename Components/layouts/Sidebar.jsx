@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { Link, NavLink, useParams, useNavigate } from "react-router-dom";
+import Link from "next/link";
+import { useRouter, useParams, } from 'next/router';
 import { links, links2 } from "Data/links";
 // import Logo from "./Logo";
 // import { Line } from "components";
@@ -7,11 +8,11 @@ import { links, links2 } from "Data/links";
 const Sidebar = () => {
   const [open, setOpen] = useState(true);
   const { id } = useParams();
-  const navigate = useNavigate();
+  const location = useRouter();
 
   const handleLogout = () => {
     localStorage.removeItem("token");
-    navigate("/");
+    location("/");
   };
 
   return (
